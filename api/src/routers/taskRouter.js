@@ -10,6 +10,7 @@ import {
 const router = express.Router();
 
 router.get("/", async (req, res) => {
+  console.log("current env is " + process.env.NODE_ENV);
   const result = await readTask();
   res.json({
     status: "success",

@@ -17,7 +17,7 @@ export const BadList = ({
       <Table striped hover>
         <tbody>
           {badList.map((item, i) => (
-            <tr key={i}>
+            <tr key={item._id}>
               <td>
                 <Form.Check
                   value={item?._id}

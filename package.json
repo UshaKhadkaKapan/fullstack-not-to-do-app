@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "cross-env NODE_ENV=production && nodemon api/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION =false && npm runintsall --prefix client && npm runbuild --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
